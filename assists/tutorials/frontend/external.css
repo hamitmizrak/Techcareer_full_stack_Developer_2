@@ -1,0 +1,12 @@
+.paragraf_class {
+    border: 1px solid blue;
+    padding: 10px 20px 30px 25px;
+    padding: 20px 15px;
+    text-indent: 30px;
+    text-align: justify;
+    /* iki tarafa yaslı */
+    text-shadow: .5px 0.8px blue;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+}
