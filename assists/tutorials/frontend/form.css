@@ -37,12 +37,19 @@ h1 {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(255, 255, 255, 0.22) 0px 10px 10px;
 }
 
+.form_data {
+  position: relative;
+}
+
 .icon_data {
-    position: absolute;
-    color: #070ee4;
-    margin-left: 0.8rem;
-    margin-top: 0.5rem;
-    font-size: 1.3rem;
+  color: blueviolet;
+  width: 2.5rem;
+  text-align: left;
+  padding: 1rem;
+  margin-top: -0.8rem;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 6px;
 }
 
 .input_data {
