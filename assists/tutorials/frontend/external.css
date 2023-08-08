@@ -47,14 +47,14 @@ a:hover{
     transition: 3s all;
 } */
 
-img{
+/* img{
     width: 100%;
     height: auto;
-}
-
+} */
+/* 
 img:hover{
     opacity: 0.8;
-}
+} */
 
 ul{
     list-style-type: none;
