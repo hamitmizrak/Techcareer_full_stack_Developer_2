@@ -21,35 +21,47 @@
 
     <h1>Üye Kayıt Formu</h1>
     <form action="#!" method="get" autocomplete="on">
-        <div class="input_container">
+        <div class="container_data">
             <label for="adi">Adınız</label><br />
             <i class="fa-regular fa-user icon_data"></i>
-            <input type="text" id="adi" name="adi" placeholder="Lütfen adınızı giriniz" title="Adınızı giriniz"
-                required="true" autofocus="true" />
+            <input 
+            type="text" 
+            id="adi" 
+            name="adi" 
+            placeholder="Lütfen adınızı giriniz" 
+            title="Adınızı giriniz"
+            required="true" 
+            autofocus="true"
+            class="input_data" />
         </div>
 
-        <div class="input_container">
-            <label for="soyadi">Soyadınız</label><br />
-            <i class="fa-regular fa-user icon_data"></i>
-            <input type="text" id="soyadi" name="soyadi" placeholder="Lütfen soyadınızı giriniz"
-                title="Soyadınızı giriniz" required />
-        </div>
-
-        <div class="input_container">
+        <div class="container_data">
             <label for="email">Email</label><br />
             <i class="fa-regular fa-envelope icon_data"></i>
-            <input type="email" id="email" name="email" placeholder="Lütfen email giriniz" title="email giriniz"
-                required />
+            <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="Lütfen email giriniz" 
+            title="email giriniz"
+             required 
+             class="input_data"/>
         </div>
 
-        <div class="input_container">
+        <div class="container_data">
             <label for="password">Şifre</label><br />
             <i class="fa-solid fa-lock icon_data"></i>
-            <input type="password" id="password" name="password" placeholder="Lütfen password giriniz"
-                title="password giriniz" required />
+            <input 
+            type="password" 
+            id="password" 
+            name="password" 
+            placeholder="Lütfen password giriniz"
+            title="password giriniz" 
+            required
+            class="input_data" />
         </div>
 
-        <div class="input_container">
+        <div class="container_data">
             <input type="reset" id="reset" name="reset" title="password giriniz" value="Temizle" />
             <button type="submit" id="submit" name="submit">Gönder</button>
         </div>
