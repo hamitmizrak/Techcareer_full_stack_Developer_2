@@ -1,0 +1,31 @@
+*{
+    margin:0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_data{
+    width: 100%;
+    position:relative;
+    margin-left: 30%;
+    margin-top: 20%;
+    border:1px solid red;
+}
+
+.form_data{
+    position: absolute;
+}
+
+.icon_data{
+    color:blueviolet;
+    width: 4rem;
+    text-align: left;
+    padding:1rem;
+    margin-top:-0.8rem;
+}
+
+.input_data{
+    width: 70%;
+    font-size: 1rem;
+    text-align: center;
+}

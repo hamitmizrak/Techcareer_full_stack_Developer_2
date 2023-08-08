@@ -16,62 +16,45 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
-        <!-- external css -->
-        <link rel="stylesheet" href="form.css">
-
-
-    </head>
+    <!-- external css -->
+    <link rel="stylesheet" href="form.css">
+</head>
 
 <body>
 
-    <h1>Üye Kayıt Formu</h1>
-    <form action="#!" method="get" autocomplete="on">
-        <div class="container_data">
-            <label for="adi">Adınız</label><br />
-            <i class="fa-regular fa-user icon_data"></i>
-            <input 
-            type="text" 
-            id="adi" 
-            name="adi" 
-            placeholder="Lütfen adınızı giriniz" 
-            title="Adınızı giriniz"
-            required="true" 
-            autofocus="true"
-            class="input_data" />
-        </div>
+    <div class="container_data">
+        <h1>Üye Kayıt Formu</h1>
+        <form action="#!" method="get" autocomplete="on">
+            <!-- ADINIZ -->
+            <div class="form_data">
+                <label for="adi">Adınız</label><br />
+                <i class="fa-regular fa-user icon_data"></i>
+                <input type="text" id="adi" name="adi" placeholder="Lütfen adınızı giriniz" title="Adınızı giriniz"
+                    required="true" autofocus="true" class="input_data" />
+            </div>
 
-        <div class="container_data">
-            <label for="email">Email</label><br />
-            <i class="fa-regular fa-envelope icon_data"></i>
-            <input 
-            type="email" 
-            id="email" 
-            name="email" 
-            placeholder="Lütfen email giriniz" 
-            title="email giriniz"
-             required 
-             class="input_data"/>
-        </div>
+            <!-- EMAİL -->
+            <div class="form_data">
+                <label for="email">Email</label><br />
+                <i class="fa-regular fa-envelope icon_data"></i>
+                <input type="email" id="email" name="email" placeholder="Lütfen email giriniz" title="email giriniz"
+                    required class="input_data" />
+            </div>
 
-        <div class="container_data">
-            <label for="password">Şifre</label><br />
-            <i class="fa-solid fa-lock icon_data"></i>
-            <input 
-            type="password" 
-            id="password" 
-            name="password" 
-            placeholder="Lütfen password giriniz"
-            title="password giriniz" 
-            required
-            class="input_data" />
-        </div>
+            <!-- ŞİFRE -->
+            <div class="form_data">
+                <label for="password">Şifre</label><br />
+                <i class="fa-solid fa-lock icon_data"></i>
+                <input type="password" id="password" name="password" placeholder="Lütfen password giriniz"
+                    title="password giriniz" required class="input_data" />
+            </div>
 
-        <div class="container_data">
-            <input type="reset" id="reset" name="reset" title="password giriniz" value="Temizle" />
-            <button type="submit" id="submit" name="submit">Gönder</button>
-        </div>
-    </form>
+            <div class="form_data">
+                <input type="reset" id="reset" name="reset" title="password giriniz" value="Temizle" />
+                <button type="submit" id="submit" name="submit">Gönder</button>
+            </div>
+        </form>
+    </div> <!-- container -->
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
