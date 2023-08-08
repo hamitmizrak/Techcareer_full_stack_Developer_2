@@ -20,7 +20,7 @@ h1{
     position:relative;
     margin-left: 2%;
     margin-top: 20%;
-    border:1px solid red;
+    border:1px solid rgba(255,255,255,0.4);
     padding:1rem;
 }
 
@@ -64,9 +64,10 @@ button[type="submit"],input[type="reset"]{
     border-radius: 10%;
     margin-right: 0.8rem;
     width: 39%;
+    transition: 2s ease-in-out;
 }
 
 button[type="submit"]:hover,input[type="reset"]:hover{
     box-shadow: 1px 1px 4px .5px rgba(255,255,255,0.8);
-    transition: 3s all;
+    transition: 2s all;
 }
