@@ -11,37 +11,45 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
     <h1>Üye Kayıt Formu</h1>
     <form action="#!" method="get" autocomplete="on">
-        <div>
+        <div class="input_container">
             <label for="adi">Adınız</label><br />
+            <i class="fa-regular fa-user icon_data"></i>
             <input type="text" id="adi" name="adi" placeholder="Lütfen adınızı giriniz" title="Adınızı giriniz"
                 required="true" autofocus="true" />
         </div>
 
-        <div>
+        <div class="input_container">
             <label for="soyadi">Soyadınız</label><br />
+            <i class="fa-regular fa-user icon_data"></i>
             <input type="text" id="soyadi" name="soyadi" placeholder="Lütfen soyadınızı giriniz"
                 title="Soyadınızı giriniz" required />
         </div>
 
-        <div>
+        <div class="input_container">
             <label for="email">Email</label><br />
+            <i class="fa-regular fa-envelope icon_data"></i>
             <input type="email" id="email" name="email" placeholder="Lütfen email giriniz" title="email giriniz"
                 required />
         </div>
 
-        <div>
+        <div class="input_container">
             <label for="password">Şifre</label><br />
+            <i class="fa-solid fa-lock icon_data"></i>
             <input type="password" id="password" name="password" placeholder="Lütfen password giriniz"
                 title="password giriniz" required />
         </div>
 
-        <div>
+        <div class="input_container">
             <input type="reset" id="reset" name="reset" title="password giriniz" value="Temizle" />
             <button type="submit" id="submit" name="submit">Gönder</button>
         </div>
