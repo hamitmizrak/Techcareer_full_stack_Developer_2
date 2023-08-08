@@ -1,73 +1,95 @@
-*{
-    margin:0px;
+* {
+    margin: 0px;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color: black;
-    color:white;
+:root {
+    --template_bg_color: black;
+    --template_color: white;
 }
 
-h1{
+html {
+    font-size: 15px;
+}
+
+body {
+    background-color: var(--template_bg_color);
+    color: var(--template_color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+}
+
+h1 {
     text-align: center;
     text-transform: uppercase;
-    margin:1rem auto;
+    margin: 1rem auto;
 }
 
-.container_data{
+.container_data {
     width: 95%;
-    position:relative;
+    position: relative;
     margin-left: 2%;
     margin-top: 20%;
-    border:1px solid rgba(255,255,255,0.4);
-    padding:1rem;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 1rem;
+    -webkit-box-shadow:rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(255, 255, 255, 0.22) 0px 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(255, 255, 255, 0.22) 0px 10px 10px;
 }
 
-/* .form_data{
+.icon_data {
     position: absolute;
-} */
-
-.icon_data{
-    color:blueviolet;
-    width: 2.5rem;
-    text-align: left;
-    padding:1rem;
-    margin-top:-0.8rem;
+    color: #070ee4;
+    margin-left: 0.8rem;
+    margin-top: 0.5rem;
     font-size: 1.3rem;
 }
 
-.input_data{
-    width: 82%;
+.input_data {
+    width: 96%;
     font-size: 1rem;
     text-align: center;
 }
 
-input[type="text"],input[type="email"],input[type="password"]{
-  padding:.4rem;
-  margin-bottom:.6rem;
-  border-radius: 1rem;
-  cursor: pointer;
+/* INPUT */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: .4rem;
+    margin-bottom: .6rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    background-color: var(--template_bg_color);
+    color: var(--template_color);
 }
 
 /* BUTTON */
-#button_group{
-    margin-left:4rem;
-    margin-top:1rem;
-    margin-bottom:1rem;
+#button_group {
+    margin-left: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
-button[type="submit"],input[type="reset"]{
-    background:#070ee4 ;
+button[type="submit"],
+input[type="reset"] {
+    background: #070ee4;
     color: white;
-    padding:.5rem 1rem .4rem 1rem;
+    padding: .5rem 1rem .4rem 1rem;
     border-radius: 10%;
     margin-right: 0.8rem;
     width: 39%;
     transition: 2s ease-in-out;
 }
 
-button[type="submit"]:hover,input[type="reset"]:hover{
-    box-shadow: 1px 1px 4px .5px rgba(255,255,255,0.8);
+button[type="submit"]:hover,
+input[type="reset"]:hover {
+    box-shadow: 1px 1px 4px .5px rgba(255, 255, 255, 0.8);
     transition: 2s all;
+    background: white;
+    color: #070ee4;;
 }
