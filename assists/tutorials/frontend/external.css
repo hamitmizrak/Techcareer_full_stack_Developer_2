@@ -23,7 +23,7 @@
     height: auto;
 }
 
-a{
+/* a{
     color: black;
     color: #012;
     color: #ab2af6;
@@ -45,7 +45,7 @@ a:hover{
     background-color: rgba(212, 206, 23, 0.8);
     color: rgb(0, 26, 255);
     transition: 3s all;
-}
+} */
 
 img{
     width: 100%;
