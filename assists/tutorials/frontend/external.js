@@ -225,30 +225,86 @@ Formül: (derece*9/5)+32
 
 //////////////////////////////////////////////
 
-// Normal Function 
-function normal() {
-    console.log("normal");
-}
-normal();
+// // Normal Function 
+// function normal() {
+//     console.log("normal");
+// }
+// normal();
 
-// Anonymous Function 
-const anonymous = function () {
-    console.log("anonymous");
-}
-anonymous();
+// // Anonymous Function 
+// const anonymous = function () {
+//     console.log("anonymous");
+// }
+// anonymous();
 
-// Arrow Function
-const arrow = () => {
-    console.log("arrow");
-}
-arrow();
+// // Arrow Function
+// const arrow = () => {
+//     console.log("arrow");
+// }
+// arrow();
 
 /////////////////////////////////////////////
 // conditional
+let conditional = () => {
+    let number = 10;
+    if (number >= 5) {
+        console.log("5'ten büyük");
+    } else {
+        console.log("5'ten Küçük");
+    }
+
+    let ternary = (number >= 5) ? "5'ten büyük" : "5'ten Küçük";
+    console.log(ternary);
+}
+//conditional();
+
+/////////////////////////////////////////////
+// conditional
+let conditional2 = () => {
+    let number = 3;
+    if (number == "1") {
+        console.log("sayı 1");
+    } else if (number === 2) {
+        console.log("sayı 2");
+    } else if (number === 3) {
+        console.log("sayı 3");
+    } else if (number === 4) {
+        console.log("sayı 4");
+    } else if (number === 5) {
+        console.log("sayı 5");
+    } else {
+        console.log("1<=X<=5 dışındadır");
+    }
+
+    switch (number) {
+        case 1:
+            console.log("sayı 1");
+            break;
+        case 2:
+            console.log("sayı 2");
+            break;
+        case 3:
+            console.log("sayı 3");
+            break;
+        case 4:
+            console.log("sayı 4");
+            break;
+        case 5:
+            console.log("sayı 5");
+            break;
+
+        default:
+            console.log("1<=X<=5 dışındadır");
+            break;
+    }
+}
+conditional2();
 
 /////////////////////////////////////////////
 // Loop
 // break return continue
+// try-catch
+// debug
 
 /////////////////////////////////////////////
 // Dizi
