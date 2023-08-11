@@ -152,33 +152,84 @@ Formül: (derece*9/5)+32
 
 /////////////////////////////////////////////
 // String
-let vocabulary="Javascript ÖĞreniyorum Javascript ";
-console.log(vocabulary.length);
-console.log(vocabulary.trim().length);
+// let vocabulary="Javascript ÖĞreniyorum Javascript ";
+// console.log(vocabulary.length);
+// console.log(vocabulary.trim().length);
 
-console.log(vocabulary.toLowerCase());
-console.log(vocabulary.toUpperCase());
+// console.log(vocabulary.toLowerCase());
+// console.log(vocabulary.toUpperCase());
 
-console.log(vocabulary.startsWith("J"));
-console.log(vocabulary.endsWith(" "));
+// console.log(vocabulary.startsWith("J"));
+// console.log(vocabulary.endsWith(" "));
 
-console.log(vocabulary.charAt(0));
-console.log(vocabulary.indexOf("Javascript"));
-console.log(vocabulary.lastIndexOf("Javascript"));
+// console.log(vocabulary.charAt(0));
+// console.log(vocabulary.indexOf("Javascript"));
+// console.log(vocabulary.lastIndexOf("Javascript"));
 
-console.log(vocabulary.substring(1));
-console.log(vocabulary.substring(0,3)); // 0<=X<=3-1
+// console.log(vocabulary.substring(1));
+// console.log(vocabulary.substring(0,3)); // 0<=X<=3-1
 
-vocabulary=vocabulary.concat("sona ekle");
-console.log(vocabulary); 
+// vocabulary=vocabulary.concat("sona ekle");
+// console.log(vocabulary); 
 
-vocabulary=vocabulary.replace(vocabulary,"yeni değiştir");
-console.log(vocabulary); // 0<=X<=3-1
+// vocabulary=vocabulary.replace(vocabulary,"yeni değiştir");
+// console.log(vocabulary); // 0<=X<=3-1
+
+// ÖDEV NOT:5 adımı beraber yapalım
+// kullanıcı tarafından girilen bir kelimenin (prompt)
+//let userData= prompt("Lütfen bir şeyler yazınız")  ;
+// S-1) Kaç karakterlidir ? (length)
+// S-2) boşluklar alınarak Kaç karakterlidir ? (trim)
+// S-3) bütün kelimeyi küçük harfle göstermek ? (toLowerCase())
+// S-4) bütün kelimeyi büyük harfle göstermek ? (toUpperCase())
+// S-5) Kullanıcıdan alınan ilk kelimeyle , "javascript" kelimeyle değiştirin. (replace, substring, indexOf)
+// console.log(userData.replace("xxxxxxx"),"javascript");
+// console.log(userData.replace(userData.substring(0,userData.indexOf(" ")),"javascript"));
+// S-6) yazdığınız kelimede "javascript ile mi başlıyor" ? (startsWith()) 
+// S-7) yazdığınız kelimede "javascript ile mi bitiyor" ? (endsWith())
+// S-8) ilk harf nedir  ? (charAt())
+// S-9) girdiğiniz kelimenin sonuna "-ben js öğreniyorum" (concat())
+// S-10) girdiğiniz 0 ile 4 arasındaki indexi ekranda gösterin? (subString())
 
 
 
 /////////////////////////////////////////////
 // Function
+
+// 1- parametresizReturnsuz
+function parametresizReturnsuz() {
+    console.log("parametresiz Returnsuz");
+}
+parametresizReturnsuz();
+
+// 2- parametresizReturnsuz
+function parametreliReturnsuz(number) {
+    console.log("parametreli Returnsuz: " + Math.pow(number, 2));
+}
+parametreliReturnsuz(6);
+
+// 3- parametresizReturnlu
+function parametresizReturnlu() {
+    return "parametresiz Returnlu";
+}
+const data3 = parametresizReturnlu();
+console.log(data3);
+
+// 4- parametreliReturnlu
+function parametreliReturnlu(user) {
+    return "parametreli Returnlu: "+ user
+}
+const data4 = parametreliReturnlu("Java Öğreniyorum");
+console.log(data4);
+
+
+//////////////////////////////////////////////
+
+// Normal Function 
+
+// Anonymous Function 
+
+// Arrow Function
 
 /////////////////////////////////////////////
 // conditional
