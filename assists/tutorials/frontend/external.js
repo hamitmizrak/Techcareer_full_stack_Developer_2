@@ -76,16 +76,16 @@ sd */
 
 ///////////////////////////////////////////// 
 // NaN: Not A Number
-console.log(3/4);
-console.log(3/"asd");
+// console.log(3/4);
+// console.log(3/"asd");
 
-// infinity
-console.log(0/5);
-console.log(5/0);
+// // infinity
+// console.log(0/5);
+// console.log(5/0);
 
-// undefined
-let data;
-console.log(data);
+// // undefined
+// let data;
+// console.log(data);
 
 // new 
 // null
@@ -99,6 +99,11 @@ console.log(data);
 Kullanıcıdan aldığımız sayıyı dereceden fahrenhyat'a çeviren JS kodu yazınız ?
 Formül: (derece*9/5)+32 
 */
+let degree, fahrenhayt;
+degree = Number(prompt("Lütfen derece için sayı giriniz"));
+fahrenhayt = ((degree * 9 / 5) + 32);
+console.log(degree + " derece: " + fahrenhayt + " fahranhayttır");
+console.log(`${degree} derece: ${fahrenhayt} fahranhayttır`);
 
 //Örnek-3
 // y=3x+4k ==>1.dereceden 2 bilinmeyenli denklem algoritması
@@ -108,26 +113,26 @@ Formül: (derece*9/5)+32
 // 4+3*2(3:3-1*6+9:1+(3:3))
 
 
-///////////////////////////////////////////// 
-// Math 
-console.log(Math.PI);
-console.log(Math.E);
-console.log(Math.sqrt(25));
-console.log(Math.abs(-25));
-console.log(Math.pow(6,2));
+/////////////////////////////////////////////
+// Math
+// console.log(Math.PI);
+// console.log(Math.E);
+// console.log(Math.sqrt(25));
+// console.log(Math.abs(-25));
+// console.log(Math.pow(6,2));
 
-console.log(Math.floor(5.9));
-console.log(Math.ceil(5.1));
-console.log(Math.round(3.4));
-console.log(Math.round(3.5));
+// console.log(Math.floor(5.9));
+// console.log(Math.ceil(5.1));
+// console.log(Math.round(3.4));
+// console.log(Math.round(3.5));
 
-console.log(Math.min(4,5,6,1,1000));
-console.log(Math.max(4,5,6,1,1000));
+// console.log(Math.min(4,5,6,1,1000));
+// console.log(Math.max(4,5,6,1,1000));
 
-console.log(Math.sin(45));
-console.log(Math.asin(1));
+// console.log(Math.sin(45));
+// console.log(Math.asin(1));
 
-console.log(Math.floor(Math.random()*9+1));
+// console.log(Math.floor(Math.random()*9+1));
 
 // Örnek-4: Aşağıdaki örnekleri math ile çözelim ?
 // -5.9 sayıyının aşağıdaki işlemleri yaptıralım ?
@@ -138,7 +143,7 @@ console.log(Math.floor(Math.random()*9+1));
 // 5-yuvarlama yapsın 6.0
 // 6-)çıkan sonucu 5 bölsün 6/5=1
 // 7-) iki sayı arasından karşılaştırma yapsın en küçüğünü alsın ve 1 ve 5
-// 8-) küçük sayı eğer tekse 3 eklesin çiftse 5 eklesin 
+// 8-) küçük sayı eğer tekse 3 eklesin çiftse 5 eklesin
 
 // Örnek-5 : kullanıcı tarafından girilen bir sayıyı negatif mi pozitif mi olduğu ekran yazdıran algoritma ?
 // NOT: cast kullalım ?
@@ -147,26 +152,25 @@ console.log(Math.floor(Math.random()*9+1));
 // eğer aynı girilirse aynı veri yoksa birbirine uymadı yazan algoritma yapalım
 
 
+/////////////////////////////////////////////
+// string
 
-///////////////////////////////////////////// 
-// string 
+/////////////////////////////////////////////
+// Function
 
-///////////////////////////////////////////// 
-// Function 
+/////////////////////////////////////////////
+// conditional
 
-///////////////////////////////////////////// 
-// conditional 
-
-///////////////////////////////////////////// 
+/////////////////////////////////////////////
 // Loop
 // break return continue
 
-///////////////////////////////////////////// 
+/////////////////////////////////////////////
 // Dizi
 
-///////////////////////////////////////////// 
-// Object 
+/////////////////////////////////////////////
+// Object
 
-///////////////////////////////////////////// 
+/////////////////////////////////////////////
 // callback, promise, asyn-await
 
