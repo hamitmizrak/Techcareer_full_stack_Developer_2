@@ -99,11 +99,11 @@ sd */
 Kullanıcıdan aldığımız sayıyı dereceden fahrenhyat'a çeviren JS kodu yazınız ?
 Formül: (derece*9/5)+32 
 */
-let degree, fahrenhayt;
-degree = Number(prompt("Lütfen derece için sayı giriniz"));
-fahrenhayt = ((degree * 9 / 5) + 32);
-console.log(degree + " derece: " + fahrenhayt + " fahranhayttır");
-console.log(`${degree} derece: ${fahrenhayt} fahranhayttır`);
+// let degree, fahrenhayt;
+// degree = Number(prompt("Lütfen derece için sayı giriniz"));
+// fahrenhayt = ((degree * 9 / 5) + 32);
+// console.log(degree + " derece: " + fahrenhayt + " fahranhayttır");
+// console.log(`${degree} derece: ${fahrenhayt} fahranhayttır`);
 
 //Örnek-3
 // y=3x+4k ==>1.dereceden 2 bilinmeyenli denklem algoritması
@@ -111,7 +111,6 @@ console.log(`${degree} derece: ${fahrenhayt} fahranhayttır`);
 
 // örnek-4 operatör işlemleri: aşağıdaki örneği javascript ile yapalım
 // 4+3*2(3:3-1*6+9:1+(3:3))
-
 
 /////////////////////////////////////////////
 // Math
@@ -151,9 +150,32 @@ console.log(`${degree} derece: ${fahrenhayt} fahranhayttır`);
 // Örnek-6 : kullanıcı tarafından password ve repassword alalım sonrasında bu iki değeri karşılaştırma yapalım
 // eğer aynı girilirse aynı veri yoksa birbirine uymadı yazan algoritma yapalım
 
-
 /////////////////////////////////////////////
-// string
+// String
+let vocabulary="Javascript ÖĞreniyorum Javascript ";
+console.log(vocabulary.length);
+console.log(vocabulary.trim().length);
+
+console.log(vocabulary.toLowerCase());
+console.log(vocabulary.toUpperCase());
+
+console.log(vocabulary.startsWith("J"));
+console.log(vocabulary.endsWith(" "));
+
+console.log(vocabulary.charAt(0));
+console.log(vocabulary.indexOf("Javascript"));
+console.log(vocabulary.lastIndexOf("Javascript"));
+
+console.log(vocabulary.substring(1));
+console.log(vocabulary.substring(0,3)); // 0<=X<=3-1
+
+vocabulary=vocabulary.concat("sona ekle");
+console.log(vocabulary); 
+
+vocabulary=vocabulary.replace(vocabulary,"yeni değiştir");
+console.log(vocabulary); // 0<=X<=3-1
+
+
 
 /////////////////////////////////////////////
 // Function
