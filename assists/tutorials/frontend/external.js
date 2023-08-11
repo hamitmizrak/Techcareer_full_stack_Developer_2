@@ -300,6 +300,16 @@ let conditional2 = () => {
 }
 conditional2();
 
+// ÖDEV: 
+// Kullanıcı tarafından girilen bir sayının negatif mi, pozitif mi ? bunu yazan JS code yazınız.
+// (Dikkat: normal  function ile yazınız)
+
+// Kullanıcı tarafından girilen bir sayının tek mi, çift mi olduğunu yazan JS code yazınız.
+// (Dikkat:anonymous function ve ternary ile yazınız)
+
+// Kullanıcıdan alınan sayıya göre Haftanın günlerini switch-case ile JS code yazınız?
+// Örneğin: kullanıcı 1 girdi: 1=pazartesi yazacak
+
 /////////////////////////////////////////////
 // Loop
 // break return continue
