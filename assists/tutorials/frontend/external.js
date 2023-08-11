@@ -196,40 +196,52 @@ Formül: (derece*9/5)+32
 /////////////////////////////////////////////
 // Function
 
-// 1- parametresizReturnsuz
-function parametresizReturnsuz() {
-    console.log("parametresiz Returnsuz");
-}
-parametresizReturnsuz();
+// // 1- parametresizReturnsuz
+// function parametresizReturnsuz() {
+//     console.log("parametresiz Returnsuz");
+// }
+// parametresizReturnsuz();
 
-// 2- parametresizReturnsuz
-function parametreliReturnsuz(number) {
-    console.log("parametreli Returnsuz: " + Math.pow(number, 2));
-}
-parametreliReturnsuz(6);
+// // 2- parametresizReturnsuz
+// function parametreliReturnsuz(number) {
+//     console.log("parametreli Returnsuz: " + Math.pow(number, 2));
+// }
+// parametreliReturnsuz(6);
 
-// 3- parametresizReturnlu
-function parametresizReturnlu() {
-    return "parametresiz Returnlu";
-}
-const data3 = parametresizReturnlu();
-console.log(data3);
+// // 3- parametresizReturnlu
+// function parametresizReturnlu() {
+//     return "parametresiz Returnlu";
+// }
+// const data3 = parametresizReturnlu();
+// console.log(data3);
 
-// 4- parametreliReturnlu
-function parametreliReturnlu(user) {
-    return "parametreli Returnlu: "+ user
-}
-const data4 = parametreliReturnlu("Java Öğreniyorum");
-console.log(data4);
+// // 4- parametreliReturnlu
+// function parametreliReturnlu(user) {
+//     return "parametreli Returnlu: "+ user
+// }
+// const data4 = parametreliReturnlu("Java Öğreniyorum");
+// console.log(data4);
 
 
 //////////////////////////////////////////////
 
 // Normal Function 
+function normal() {
+    console.log("normal");
+}
+normal();
 
 // Anonymous Function 
+const anonymous = function () {
+    console.log("anonymous");
+}
+anonymous();
 
 // Arrow Function
+const arrow = () => {
+    console.log("arrow");
+}
+arrow();
 
 /////////////////////////////////////////////
 // conditional
