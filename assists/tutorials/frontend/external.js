@@ -305,7 +305,18 @@ conditional2();
 // (Dikkat: normal  function ile yazınız)
 
 // Kullanıcı tarafından girilen bir sayının tek mi, çift mi olduğunu yazan JS code yazınız.
-// (Dikkat:anonymous function ve ternary ile yazınız)
+// (Dikkat:anonymous function ve ternary ile yazınız). 
+
+let oddEvenCalculator = function () {
+    let number = prompt('Bir Sayı Giriniz');
+    if (number % 2 == 0) {//çift sayı
+        console.log(number + " çift sayıdır");
+    } else {
+        console.log(number + " tek sayıdır");
+    }
+}
+//oddEvenCalculator()
+
 
 // Kullanıcıdan alınan sayıya göre Haftanın günlerini switch-case ile JS code yazınız?
 // Örneğin: kullanıcı 1 girdi: 1=pazartesi yazacak
