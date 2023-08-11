@@ -298,7 +298,7 @@ let conditional2 = () => {
             break;
     }
 }
-conditional2();
+//conditional2();
 
 // ÖDEV: 
 // Kullanıcı tarafından girilen bir sayının negatif mi, pozitif mi ? bunu yazan JS code yazınız.
@@ -317,15 +317,97 @@ let oddEvenCalculator = function () {
 }
 //oddEvenCalculator()
 
-
 // Kullanıcıdan alınan sayıya göre Haftanın günlerini switch-case ile JS code yazınız?
 // Örneğin: kullanıcı 1 girdi: 1=pazartesi yazacak
 
+// debug
 /////////////////////////////////////////////
 // Loop
-// break return continue
+let loop = () => {
+    console.log(1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10);
+    // i++
+    // ++i
+    // i+=1;
+    // i=i+1;
+
+    // FOR
+    let sum1 = 0;
+    for (let i = 1; i <= 10; i++) {
+        sum1 = sum1 + i;
+    }
+    // for(;;){}
+    console.log("Toplam: " + sum1);
+
+
+    // WHILE
+    let sum2 = 0;
+    let k = 1;
+    while (k <= 10) {
+        sum2 += k;
+        k++;
+    }
+    // while(true){}
+    console.log("Toplam: " + sum2);
+
+    // DO-WHILE
+    let sum3 = 0;
+    let m = 1;
+    do {
+        sum3 += m;
+        m++;
+    } while (m <= 10);
+    // while(true){}
+    console.log("Toplam: " + sum3);
+}
+//loop()
+//////////////////////////////////////////////////
+
+// Exception Handling
 // try-catch
-// debug
+let tryCatchFunction = () => {
+    try {
+        alertx("DEneme44");
+    } catch (err) {
+        //console.err(err);
+        console.info(err.name);
+        //console.log(err.message);
+    } finally {
+        console.log("db.close");
+    }
+    console.log("Son satır");
+
+    throw "Hata var";
+}
+tryCatchFunction()
+
+/////////////////////////////////////////////////
+// break: döngünün çalışmasına izin verme
+// return: metotun çalışmasına izin verme
+// continue: sadece bir seferlik o şartta çalışma
+
+// return  : metotun çalışmasını durdurur
+// break   : döngünün çalışmasını durdurur
+// continue: sadece 1 kereye mahsus durur sonra devam eder.
+
+// SORU 1<=userData<=50
+// 1 ile Kullanıcı tarafından alınan bitiş sayısına kadar toplama yapan Algoritma örneği
+// Örnek: 1<=user 1+2+3+...userdatası
+// Eğer Bu sayılardan 7 sayıyı varsa bunu toplayama dahil etmesin (continue)
+// Bu sayının en fazla 50'e kadar toplama yapabilir (break)
+// bu sayılardan çift olanların kaç tane, sayıların kendisi ve toplamları nedir ?
+// bu sayılardan tek olanların kaç tane, sayıların kendisi ve toplamları nedir ?
+// secret-Key kullanıcı eğer 44 girerse hiç bir işlem yapmadan sistemden çıkış sağlansın onunda haricinde sürekli işlem yapsın
+// Dikkat: Bu algoritmayı Arrow Function ile yapalım.
+// (Clean code kuralları çercevesinde ) algoritma yapan program ?
+
+///////////////////////////////////////////////////////////////////////////////
+// ÖDEV
+// kullanıcıdan aldığımız isim soyisim (boşluk var)
+// ilk karakter göstersin sonraki kelimeleri masking (maskeleme yapsın)
+// eğer kullanıcı isim ve soyisimi ilk karakteri küçük girmişse büyük olsun mutlaka
+// Hamit Mızrak
+// H**** MIZ***
+// ipucu: charAt, substring, indexOf, döngü, karar mekanizma
 
 /////////////////////////////////////////////
 // Dizi
