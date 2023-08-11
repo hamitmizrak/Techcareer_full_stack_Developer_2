@@ -427,19 +427,19 @@ let examplesCommon = () => {
         if (i % 2 == 0) {
             evenCounter++;
             evenSum += i;
-            evenNumber=evenNumber+" "+i
+            evenNumber = evenNumber + " " + i
         } else {
 
         }
-        commonSum+=i;
+        commonSum += i;
     } //end loop
-    console.log("Genel toplam: "+commonSum);
+    console.log("Genel toplam: " + commonSum);
 
-    console.log("Çift toplam: "+evenSum);
-    console.log("Çift adet sayısı: "+evenCounter);
-    console.log("Çift sayılar: "+evenNumber);
+    console.log("Çift toplam: " + evenSum);
+    console.log("Çift adet sayısı: " + evenCounter);
+    console.log("Çift sayılar: " + evenNumber);
 }
-examplesCommon()
+//examplesCommon()
 
 ///////////////////////////////////////////////////////////////////////////////
 // ÖDEV
@@ -452,9 +452,84 @@ examplesCommon()
 
 /////////////////////////////////////////////
 // Dizi
+let arrTuto = () => {
+    let arr = [5, 3, 1, 2, 6, 7];
+    arr[5] = 99;
+    console.log(arr);
+    console.log(arr[0]);
+    console.log(arr[arr.length - 1]);
+    //console.log(arr.length);
+}
+//arrTuto();
+
+let arrFunctionRandom = () => {
+    let temp = 0;
+    let dizi = [];
+    for (let i = 0; i < 5; i++) {
+        temp = Math.round(Math.random() * 9 + 1);
+        dizi[i] = temp;
+    }
+    return dizi;
+}
+
+let arrNewFunction = () => {
+    let arr = arrFunctionRandom();
+    console.log(arr);
+
+    // arr.push(44);
+    // arr.unshift(23);
+    // arr.pop();
+    // arr.shift();
+    // arr.sort().reverse();
+
+    for (let i = 0; i < arr.length; i++) {
+        document.writeln(arr[i] + " ")
+    }
+
+    document.writeln("<br/>")
+    for (let temp in arr) {
+        document.writeln(temp);
+    }
+
+    document.writeln("<br/>")
+    for (let temp of arr) {
+        document.writeln(temp);
+    }
+}
+//arrNewFunction()
+
 
 /////////////////////////////////////////////
 // Object
+
+let objTuto = () => {
+    let obje = {
+        "name": "Hamit",
+        "surname": "Mızrak",
+        "fullName": function () {
+            console.log(this.name + " " + this.surname);
+        },
+        "java": {
+            "name": "JavaSe",
+            "version": 21
+        },
+        "javaee": [],
+    };
+    console.log(obje.name.toUpperCase());
+    console.log(obje.java.version);
+    console.log(obje["java"]["version"]); //nested Object
+    console.log(obje.fullName());
+
+    // Object Literal
+    obje.isLogin = "true";
+    console.log(obje.isLogin);
+
+    // JSON.parse,stringfy
+    const objectToString=JSON.stringify(obje);
+    const javaData=JSON.parse(objectToString).java.name;
+    console.log(javaData);
+}
+objTuto();
 
 /////////////////////////////////////////////
 // callback, promise, asyn-await
